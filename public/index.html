@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>BancoEstado - Gestión de Cuentas</title>
+  <title>Actividad 11 - BancoEstado</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
 <header>
   <span>🏦</span>
-  <h1>BancoEstado — Gestión de Cuentas</h1>
+  <h1>BancoEstado - Gestión de Cuentas</h1>
 </header>
 
 <div class="contenedor">
@@ -80,7 +80,7 @@
 <div class="modal-overlay" id="modal-agregar-rut">
   <div class="modal">
     <h3>💳 Agregar cuenta RUT a cliente existente</h3>
-    <input type="number" id="ar-id"     placeholder="ID del cliente">
+    <input type="number" id="ar-id" min="1"     placeholder="ID del cliente">
     <input type="text"   id="ar-numero" placeholder="Número cuenta RUT">
     <input type="number" id="ar-saldo"  placeholder="Saldo inicial">
     <div class="modal-botones">
@@ -94,7 +94,7 @@
 <div class="modal-overlay" id="modal-agregar-ahorro">
   <div class="modal">
     <h3>💰 Agregar cuenta Ahorro a cliente existente</h3>
-    <input type="number" id="aa-id"     placeholder="ID del cliente">
+    <input type="number" id="aa-id" min="1"     placeholder="ID del cliente">
     <input type="text"   id="aa-numero" placeholder="Número cuenta Ahorro">
     <input type="number" id="aa-saldo"  placeholder="Saldo inicial">
     <div class="modal-botones">
@@ -108,7 +108,7 @@
 <div class="modal-overlay" id="modal-eliminar-cliente">
   <div class="modal">
     <h3>🗑 Eliminar cliente y todas sus cuentas</h3>
-    <input type="number" id="ec-id" placeholder="ID del cliente">
+    <input type="number" id="ec-id" min="1" placeholder="ID del cliente">
     <div class="modal-botones">
       <button class="btn-secundario" onclick="cerrarModal('eliminar-cliente')">Cancelar</button>
       <button class="btn-danger"     onclick="eliminarCliente()">Eliminar</button>
@@ -120,7 +120,7 @@
 <div class="modal-overlay" id="modal-eliminar-rut">
   <div class="modal">
     <h3>❌ Eliminar cuenta RUT de cliente</h3>
-    <input type="number" id="er-id" placeholder="ID del cliente">
+    <input type="number" id="er-id" min="1" placeholder="ID del cliente">
     <div class="modal-botones">
       <button class="btn-secundario" onclick="cerrarModal('eliminar-rut')">Cancelar</button>
       <button class="btn-danger"     onclick="eliminarRut()">Eliminar</button>
@@ -132,7 +132,7 @@
 <div class="modal-overlay" id="modal-eliminar-ahorro">
   <div class="modal">
     <h3>❌ Eliminar cuenta Ahorro de cliente</h3>
-    <input type="number" id="ea-id"     placeholder="ID del cliente">
+    <input type="number" id="ea-id" min="1"     placeholder="ID del cliente">
     <input type="text"   id="ea-numero" placeholder="Número cuenta Ahorro (ej: AH-001)">
     <div class="modal-botones">
       <button class="btn-secundario" onclick="cerrarModal('eliminar-ahorro')">Cancelar</button>
